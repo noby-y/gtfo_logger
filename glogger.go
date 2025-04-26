@@ -87,7 +87,9 @@ func main() {
 
 		if len(matchIndexes) == 0 {
 			fmt.Println("No matches found")
-			time.Sleep(time.Second)
+			fmt.Print("Press ENTER to refresh...")
+			fmt.Scanln()
+			fmt.Print("\033[H\033[2J")
 			continue
 		}
 
