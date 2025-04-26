@@ -106,9 +106,19 @@ func main() {
 				key, _ := strconv.Atoi(matches[2])
 
 				letter := getLetter(zone, key)
+				pos := ""
+
+				if zone == 528 && key >= 43 {
+					if key >= 43 {
+						// pos =  ""
+						pos =  "BAD"
+					} else {
+						pos =  ""
+					}
+				}
 
 				if zone == 528 || zone == 533 {
-					fmt.Printf("E_%d: %s - %d\n", zone, letter, key)
+					fmt.Printf("E_%d: %s-%d %s\n", zone, letter, key, pos)
 				}
 			}
 		}
