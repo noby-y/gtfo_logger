@@ -31,4 +31,3 @@ var E_533 = []RangeLetter{
 var E_DEFAULT = []RangeLetter{
 	{0, 9999, "?"},
 }
-

@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"gtfologger/zone_areas"
+	"gtfo_logger/zone_areas"
 )
 
 func main() {
@@ -107,8 +107,9 @@ func main() {
 
 				letter := getLetter(zone, key)
 
-				// fmt.Println("E_", zone_number, ": ", letter, "-", key_number)
-				fmt.Printf("E_%d: %s - %d\n", zone, letter, key)
+				if zone == 528 || zone == 533 {
+					fmt.Printf("E_%d: %s - %d\n", zone, letter, key)
+				}
 			}
 		}
 
