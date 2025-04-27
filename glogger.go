@@ -38,6 +38,10 @@ func main() {
 			return nil
 		}
 
+		if !strings.Contains(info.Name(), "CLIENT") {
+			return nil
+		}
+
 		if info.ModTime().After(newest_mod_time) {
 			newest_mod_time = info.ModTime()
 			newest_file = path
@@ -113,9 +117,9 @@ func main() {
 				if zone == 528 && key >= 43 {
 					if key >= 43 {
 						// pos =  ""
-						pos =  "BAD"
+						pos = "BAD"
 					} else {
-						pos =  ""
+						pos = ""
 					}
 				}
 
