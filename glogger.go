@@ -38,7 +38,7 @@ func main() {
 			return nil
 		}
 
-		if !strings.Contains(info.Name(), "CLIENT") {
+		if !strings.Contains(info.Name(), "NETSTATUS") {
 			return nil
 		}
 
